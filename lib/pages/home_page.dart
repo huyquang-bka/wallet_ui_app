@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage> {
                   //Statistic
                   OtherFunction(
                     color: Colors.deepPurple.withOpacity(0.7),
-                    imageIconPath: "lib/assets/icons/statistic.jpg",
+                    imageIconPath: "lib/assets/icons/statistic.png",
                     title: "Statistic",
                     subtitle: "Payment and income",
                   ),
@@ -158,7 +158,7 @@ class _HomePageState extends State<HomePage> {
                   //Transaction
                   OtherFunction(
                     color: Colors.deepOrange.withOpacity(0.7),
-                    imageIconPath: "lib/assets/icons/transaction.jpg",
+                    imageIconPath: "lib/assets/icons/transaction.png",
                     title: "Transaction",
                     subtitle: "Transaction history",
                   ),
