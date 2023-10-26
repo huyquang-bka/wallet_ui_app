@@ -1,4 +1,4 @@
-# Mental Health App
+# Wallet UI App
 
 <img src="screenshot.png" alt="App Screenshot" width="300" height="650">
 
