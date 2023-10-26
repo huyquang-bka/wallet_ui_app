@@ -98,6 +98,7 @@ class _HomePageState extends State<HomePage> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   BankCard(
+                    imageIconPath: "lib/assets/icons/visa.png",
                     balance: 1000,
                     cardNumber: 1234,
                     endMonth: 12,
@@ -105,6 +106,7 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.deepPurple[300],
                   ),
                   BankCard(
+                    imageIconPath: "lib/assets/icons/mastercard.png",
                     balance: 2000,
                     cardNumber: 5678,
                     endMonth: 12,
@@ -112,6 +114,7 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.blue[300],
                   ),
                   BankCard(
+                    imageIconPath: "lib/assets/icons/credit-card.png",
                     balance: 3000,
                     cardNumber: 4321,
                     endMonth: 12,

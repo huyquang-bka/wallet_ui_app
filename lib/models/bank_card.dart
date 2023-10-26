@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BankCard extends StatelessWidget {
+  final String imageIconPath;
   final double balance;
   final int cardNumber;
   final int endMonth;
@@ -9,6 +10,7 @@ class BankCard extends StatelessWidget {
 
   const BankCard(
       {super.key,
+      required this.imageIconPath,
       required this.balance,
       required this.cardNumber,
       required this.endMonth,
@@ -27,14 +29,24 @@ class BankCard extends StatelessWidget {
         ),
         width: 200,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            //Type Card
-            //Text balance
-            const Text(
-              "Balance",
-              style: TextStyle(color: Colors.white),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //Text balance
+                const Text(
+                  "Balance",
+                  style: TextStyle(color: Colors.white),
+                ),
+                //Type Card
+                Image.asset(
+                  imageIconPath,
+                  width: 40,
+                  height: 40,
+                ),
+              ],
             ),
             const SizedBox(height: 10),
             //Total money
@@ -42,7 +54,7 @@ class BankCard extends StatelessWidget {
               "\$ $balance",
               style: const TextStyle(color: Colors.white, fontSize: 24),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             //Card number and end date
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
