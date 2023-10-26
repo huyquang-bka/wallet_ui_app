@@ -27,6 +27,7 @@ class BankCard extends StatelessWidget {
         ),
         width: 200,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //Type Card
