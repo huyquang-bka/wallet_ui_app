@@ -23,29 +23,39 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        //color
-        backgroundColor: Colors.grey[100],
-        //bottom nav
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          onTap: onNavTap,
-          currentIndex: _currentNavIndex,
-          selectedItemColor: Colors.pink,
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.settings_outlined),
-              label: 'Settings',
-            ),
-          ],
+    return Scaffold(
+      //color
+      backgroundColor: Colors.grey[100],
+      //floating action button
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.blue,
+        child: const Icon(
+          Icons.monetization_on_outlined,
+          size: 32,
         ),
-        //body
-        body: Column(
+      ),
+      //bottom nav
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        onTap: onNavTap,
+        currentIndex: _currentNavIndex,
+        selectedItemColor: Colors.pink,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings_outlined),
+            label: 'Settings',
+          ),
+        ],
+      ),
+      //body
+      body: SafeArea(
+        child: Column(
           children: [
             //title and add button
             Padding(
